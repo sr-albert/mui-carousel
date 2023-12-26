@@ -1,10 +1,15 @@
 {
   "name": "mui-carousel",
   "version": "1.0.0",
+  "type":"module",
+  "source":"src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
   "description": "Carousel for MUI",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle",           
+    "dev": "microbundle watch"        
   },
   "keywords": [
     "technerf",
@@ -13,5 +18,12 @@
     "carousel"
   ],
   "author": "albertnguyen",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sr-albert/mui-carousel.git"
+  }
 }
